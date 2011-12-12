@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.danvk</groupId>
+  <artifactId>dygraph</artifactId>
+  <version>0.6.0-SNAPSHOT</version>
+  <versioning>
+    <versions>
+      <version>0.6.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20111212124843</lastUpdated>
+  </versioning>
+</metadata>
