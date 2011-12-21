@@ -4,10 +4,11 @@
   <artifactId>dygraph</artifactId>
   <version>0.7.0</version>
   <versioning>
-    <release>0.7.0</release>
+    <release>0.7.1</release>
     <versions>
       <version>0.7.0</version>
+      <version>0.7.1</version>
     </versions>
-    <lastUpdated>20111220152738</lastUpdated>
+    <lastUpdated>20111221160657</lastUpdated>
   </versioning>
 </metadata>
