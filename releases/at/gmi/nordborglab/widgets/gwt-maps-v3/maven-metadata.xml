@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>at.gmi.nordborglab.widgets</groupId>
+  <artifactId>gwt-maps-v3</artifactId>
+  <version>3.0.2b</version>
+  <versioning>
+    <versions>
+      <version>3.0.2b</version>
+    </versions>
+    <lastUpdated>20120109163546</lastUpdated>
+  </versioning>
+</metadata>
