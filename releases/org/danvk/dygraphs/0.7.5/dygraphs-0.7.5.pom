@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.danvk</groupId>
+	<artifactId>dygraphs</artifactId>
+	<version>0.7.5</version>
+	<name>dygraphs</name>
+
+	<parent>
+		<groupId>at.gmi.nordborglab</groupId>
+		<artifactId>superpom</artifactId>
+		<version>0.1</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+
+	<distributionManagement>
+		<repository>
+			<id>repo</id>
+			<url>${github.maven.repository}/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>${github.maven.repository}/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+
+	<organization>
+		<name>GMI</name>
+		<url>http://www.gmi.oeaw.ac.at</url>
+	</organization>
+	<build>
+	    <plugins>
+		<plugin>
+			<artifactId>exec-maven-plugin</artifactId>
+			<groupId>org.codehaus.mojo</groupId>
+			<executions>
+				<execution><!-- Run our version calculation script -->
+					<id>run-minify-script</id>
+					<phase>generate-sources</phase>
+					<goals>
+						<goal>exec</goal>
+					</goals>
+					<configuration>
+						<executable>${basedir}/generate-combined.sh</executable>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+		</plugins>
+	</build>
+	<scm>
+		<url>https://timeu@github.com/timeu/dygraphs</url>
+		<connection>scm:git:https://timeu@github.com/timeu/dygraphs.git</connection>
+		<developerConnection>scm:git:https://timeu@github.com/timeu/dygraphs.git</developerConnection>
+	  <tag>dygraphs-0.7.5</tag>
+  </scm>
+	<packaging>pom</packaging>
+	<modules>
+		<module>gwt</module>
+	</modules>
+</project>
