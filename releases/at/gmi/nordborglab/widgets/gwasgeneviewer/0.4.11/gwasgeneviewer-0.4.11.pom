@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>at.gmi.nordborglab.widgets</groupId>
+  <artifactId>gwasgeneviewer</artifactId>
+  <version>0.4.11</version>
+  <name>GWASGeneViewer</name>
+  
+  <parent>
+		<groupId>at.gmi.nordborglab</groupId>
+		<artifactId>superpom</artifactId>
+		<version>0.1</version>
+	</parent>
+  
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <gwtVersion>2.5.0-rc2</gwtVersion>
+  </properties>
+  
+  <repositories>
+     <repository>
+      <id>nordborglab-snapshots</id>
+      <url>https://github.com/timeu/maven-repos/raw/master/snapshots/</url>
+    </repository>
+        <repository>
+      <id>nordborglab-releases</id>
+      <url>https://github.com/timeu/maven-repos/raw/master/releases/</url>
+    </repository>
+  </repositories>
+
+ 
+
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-user</artifactId>
+      <version>${gwtVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>at.gmi.nordborglab.widgets</groupId>
+    	<artifactId>geneviewer</artifactId>
+    	<version>0.4.8</version>
+    </dependency>
+    <dependency>
+    	<groupId>at.gmi.nordborglab.widgets</groupId>
+    	<artifactId>ldviewer</artifactId>
+    	<version>0.1.2</version>
+    </dependency>
+  </dependencies>
+  
+  <distributionManagement>
+	<repository>
+		<id>repo</id>
+		<url>${github.maven.repository}/releases/</url>
+	</repository>
+	<snapshotRepository>
+		<id>snapshot-repo</id>
+		<url>${github.maven.repository}/snapshots/</url>
+	</snapshotRepository>
+</distributionManagement>
+
+  
+  <organization>
+  	<name>GMI</name>
+  	<url>http://www.gmi.oeaw.ac.at</url>
+  </organization>
+  <build>
+  <resources>
+       <resource>
+                <directory>src/main/java</directory>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+    </resources>
+  </build>
+  <scm>
+  	<url>https://timeu@github.com/timeu/GWASGeneViewer</url>
+  	<connection>scm:git:https://timeu@github.com/timeu/GWASGeneViewer.git</connection>
+  	<developerConnection>scm:git:https://timeu@github.com/timeu/GWASGeneViewer.git</developerConnection>
+    <tag>gwasgeneviewer-0.4.11</tag>
+  </scm>
+</project>
