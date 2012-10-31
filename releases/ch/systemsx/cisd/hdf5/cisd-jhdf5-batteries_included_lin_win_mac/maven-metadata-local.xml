@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ch.systemsx.cisd.hdf5</groupId>
+  <artifactId>cisd-jhdf5-batteries_included_lin_win_mac</artifactId>
+  <version>12.02.2</version>
+  <versioning>
+    <versions>
+      <version>12.02.2</version>
+    </versions>
+    <lastUpdated>20121031120705</lastUpdated>
+  </versioning>
+</metadata>
