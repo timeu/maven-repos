@@ -2,13 +2,11 @@
 <metadata>
   <groupId>at.gmi.nordborglab</groupId>
   <artifactId>processingjs</artifactId>
-  <version>0.6.0</version>
   <versioning>
-    <release>0.6.1</release>
+    <release>0.6.2</release>
     <versions>
-      <version>0.6.0</version>
-      <version>0.6.1</version>
+      <version>0.6.2</version>
     </versions>
-    <lastUpdated>20121004094214</lastUpdated>
+    <lastUpdated>20140326125651</lastUpdated>
   </versioning>
 </metadata>
